@@ -1,25 +1,51 @@
 .container {
+  top: 0px;
   width: 100%;
   height: 100px;
   display: flex;
+  position: sticky;
   min-width: 288px;
   align-items: center;
+  scroll-behavior: smooth;
   justify-content: space-between;
-  background-color: red;
+  background-color: #111111;
 }
 
-.infoContainer{
+.infoContainer {
+  gap: 10px;
   margin: 0 20px;
   display: flex;
-  background-color: blue;
+  align-items: center;
   justify-content: space-between;
+}
+
+.contactInfo {
+  display: none;
+}
+
+.phone,
+.message {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.phone span,
+.message a {
+  font-size: var(--Xsmall);
+  font-family: "Poppins", sans-serif;
+}
+
+.phone {
+  color: #cacaca;
+  margin-right: 26px;
 }
 
 .btn {
   gap: 0.65rem;
-  width: 3rem;
+  width: 2.4rem;
   border: 0;
-  height: 3rem;
   cursor: pointer;
   display: flex;
   background: transparent;
@@ -28,7 +54,7 @@
 
 .btn > div {
   width: 100%;
-  height: 2px;
+  height: 3px;
   transition: all 0.5s;
   background: var(--white);
   border-radius: 6px;
@@ -45,4 +71,11 @@
 
 .btn:hover div:last-child {
   transform: rotate(-45deg);
+}
+
+@media (min-width: 1024px) {
+  .contactInfo {
+    display: flex;
+    margin-right: 36px;
+  }
 }
