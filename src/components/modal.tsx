@@ -25,10 +25,12 @@ const Modal = ({ closeModal }: any) => {
         </li>
       </ul>
       <div className={styles.contactContainer}>
-        <span className={styles.message}>
-          <a href="mailto:clients@wolf.fit">clients@wolf.fit</a>
-        </span>
-        <span className={styles.phone}>1829-819-1370</span>
+        <div className={styles.information}>
+          <span className={styles.message}>
+            <a href="mailto:clients@wolf.fit">clients@wolf.fit</a>
+          </span>
+          <span className={styles.phone}>1829-819-1370</span>
+        </div>
         <Image src={IgSVG} alt="instagram" width={24} height={24} />
       </div>
     </div>
