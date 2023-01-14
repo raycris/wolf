@@ -28,14 +28,29 @@
   margin-bottom: 16px;
 }
 
-.menuItem a:hover {
-  text-decoration: underline;
-}
-
-.menuItem a {
+.label {
   cursor: pointer;
+  position: relative;
   font-size: var(--normal);
   font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.label::after {
+  content: "";
+  width: 0;
+  background-color: red;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all 0.5s;
+  will-change: width;
+}
+
+.label:hover::after {
+  right: 0;
+  width: 100%;
 }
 
 .contactContainer {
@@ -57,8 +72,8 @@
 .message {
   font-size: var(--xsmall);
   font-weight: 100;
-  line-height: 1.9;
   font-family: "Poppins", sans-serif;
+  line-height: 1.9;
 }
 
 .phone {
@@ -81,8 +96,8 @@
   }
 
   .menuItem a {
+    font-size: var(--large);
     list-style: none;
-    font-size: 2.6rem;
   }
 
   .container {

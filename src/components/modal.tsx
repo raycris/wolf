@@ -15,19 +15,19 @@ const Modal = ({ closeModal }: any) => {
       </div>
       <ul className={styles.menuContainer}>
         <li className={styles.menuItem}>
-          <a href="#main">Home</a>
+          <a href="#main" className={styles.label}>Home</a>
         </li>
         <li className={styles.menuItem}>
-          <a href="#register">Registration</a>
+          <a href="#register" className={styles.label}>Registration</a>
         </li>
         <li className={styles.menuItem}>
-          <a href="mailto:clients@wolf.fit">Contact</a>
+          <a href="mailto:clients@wolf.fit" className={styles.label}>Contact</a>
         </li>
       </ul>
       <div className={styles.contactContainer}>
         <div className={styles.information}>
           <span className={styles.message}>
-            <a href="mailto:clients@wolf.fit">clients@wolf.fit</a>
+            <a href="mailto:clients@wolf.fit" >clients@wolf.fit</a>
           </span>
           <span className={styles.phone}>1829-819-1370</span>
         </div>
