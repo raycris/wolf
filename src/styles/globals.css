@@ -1,9 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 :root {
   /* Colors */
-  --primary: #4c00ff;
   --white: #fff;
   --softBlack: #4c4c4c;
+  --primary: #4c00ff;
+  --softBlack: #4c4c4c;
+  --background: #0c0c0c;
+
 
   /* font-size */
   --xSmall: 1.2rem;
@@ -26,12 +29,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--background)
 }
 
 a {
