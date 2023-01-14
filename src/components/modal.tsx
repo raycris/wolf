@@ -1,9 +1,9 @@
-import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 
-import IgSVG from "../assets/icons/instagram.svg";
+import Image from "next/image";
 
 import X from "../assets/icons/xIcon.svg";
+import IgSVG from "../assets/icons/instagram.svg";
 
 import styles from "./modal.module.css";
 
@@ -15,23 +15,31 @@ const Modal = ({ closeModal }: any) => {
       </div>
       <ul className={styles.menuContainer}>
         <li className={styles.menuItem}>
-          <a href="#main" className={styles.label}>Home</a>
+          <a href="#main" className={styles.label}>
+            Home
+          </a>
         </li>
         <li className={styles.menuItem}>
-          <a href="#register" className={styles.label}>Registration</a>
+          <a href="#register" className={styles.label}>
+            Registration
+          </a>
         </li>
         <li className={styles.menuItem}>
-          <a href="mailto:clients@wolf.fit" className={styles.label}>Contact</a>
+          <a href="mailto:clients@wolf.fit" className={styles.label}>
+            Contact
+          </a>
         </li>
       </ul>
       <div className={styles.contactContainer}>
         <div className={styles.information}>
           <span className={styles.message}>
-            <a href="mailto:clients@wolf.fit" >clients@wolf.fit</a>
+            <a href="mailto:clients@wolf.fit">clients@wolf.fit</a>
           </span>
           <span className={styles.phone}>1829-819-1370</span>
         </div>
-        <Image src={IgSVG} alt="instagram" width={24} height={24} />
+        <a href="https://www.instagram.com/bewolf.rd/">
+          <Image src={IgSVG} alt="instagram" width={24} height={24} />
+        </a>
       </div>
     </div>
   );
