@@ -51,7 +51,7 @@
 }
 
 .description {
-  color: var(--white);
+  color: #e6e6e6;
   font-size: var(--small);
   line-height: 1.9;
   font-weight: 400;

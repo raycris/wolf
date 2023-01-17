@@ -5,6 +5,9 @@ import Image from "next/image";
 import Logo01 from "../assets/images/Logo01.png";
 import Logo02 from "../assets/images/Logo02.png";
 import Logo03 from "../assets/images/Logo03.png";
+import PlayButton from "../assets/images/Play-B.png";
+
+import Training from "../assets/images/IMGPlay-TN.jpg";
 
 import styles from "./strength.module.css";
 
@@ -35,17 +38,39 @@ const data = [
 const Strength = () => {
   return (
     <section className={styles.container}>
-      {data.map((item) => (
-        <div className={styles.infoContainer} key={item.id}>
-          <picture>
-            <Image src={item.icon} alt={item.title} className={styles.icon} />
-          </picture>
-          <div className={styles.textContainer}>
-            <h3 className={styles.title}>{item.title}</h3>
-            <p className={styles.description}>{item.description}</p>
+      <div>
+        {data.map((item) => (
+          <div className={styles.infoContainer} key={item.id}>
+            <picture>
+              <Image src={item.icon} alt={item.title} className={styles.icon} />
+            </picture>
+            <div className={styles.textContainer}>
+              <h3 className={styles.title}>{item.title}</h3>
+              <p className={styles.description}>{item.description}</p>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
+      <div className={styles.videoContainer}>
+
+      <picture >
+        <a href="https://www.youtube.com/watch?v=7KSNmziMqog">
+          <Image
+            src={Training}
+            alt={"people working out"}
+            className={styles.videoBtn}
+          />
+          <span className={styles.btnPlayContainer}>
+            <Image
+              src={PlayButton}
+              alt={"Play Button"}
+              width={100}
+              height={101}
+            />
+          </span>
+        </a>
+      </picture>
+      </div>
     </section>
   );
 };
