@@ -1,25 +1,25 @@
-import { url } from "inspector";
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+
+import Button from "./button";
 
 import GymTrainers from "../assets/images/Gym-Trainer.jpg";
-import WayOfLife from "../assets/images/way-of-life.jpg";
 
 import styles from "./hero.module.css";
 
 const Hero = () => {
   return (
-    <section
-      className={styles.container}
-    >
-      {/* <Image src={WayOfLife} alt="backgroudn"></Image> */}
-      <picture>
+    <section className={styles.container}>
+      <div>
+
+      <picture className={styles.ver}>
         <Image
           src={GymTrainers}
           alt={"gym trainers"}
           className={styles.heroPhoto}
         />
       </picture>
+      </div>
       <div className={styles.infoContainer}>
         <span>Your Trainers</span>
         <h3 className={styles.secondTitle}>
@@ -32,6 +32,7 @@ const Hero = () => {
             health is the pillar of all their activities.
           </p>
         </div>
+        <Button href={undefined} />
       </div>
     </section>
   );
