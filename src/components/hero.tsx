@@ -9,6 +9,7 @@ import styles from "./hero.module.css";
 
 const Hero = () => {
   return (
+    <>
     <section className={styles.container}>
       <picture>
         <Image
@@ -34,6 +35,8 @@ const Hero = () => {
         <Button href={undefined} />
       </div>
     </section>
+      <span className={styles.line}/>
+    </>
   );
 };
 

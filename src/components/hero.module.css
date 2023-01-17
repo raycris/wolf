@@ -58,6 +58,13 @@
   font-family: "Poppins", sans-serif;
 }
 
+.line {
+  width: 100%;
+  min-width: 288px;
+  margin-top: 2px;
+  border-bottom: 1px solid #8b8b8b;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 100%;
@@ -75,6 +82,10 @@
     font-size: 6.4rem;
     inline-size: 356px;
     overflow-wrap: break-word;
+  }
+
+  .line{
+    display: none;
   }
 }
 
