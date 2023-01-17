@@ -6,7 +6,7 @@ import Logo from "../assets/images/logo-trainer.png";
 import Phone from "../assets/images/phone.png";
 import Message from "../assets/images/message.png";
 
-import Modal from "../components/modal";
+import Modal from "./modal";
 
 import styles from "./header.module.css";
 

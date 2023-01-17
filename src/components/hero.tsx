@@ -6,6 +6,7 @@ import Button from "./button";
 import GymTrainers from "../assets/images/Gym-Trainer.jpg";
 
 import styles from "./hero.module.css";
+import Strength from "./strength";
 
 const Hero = () => {
   return (
@@ -36,6 +37,7 @@ const Hero = () => {
       </div>
     </section>
       <span className={styles.line}/>
+      <Strength/>
     </>
   );
 };
