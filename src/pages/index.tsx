@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
-import Button from "../components/button";
+
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Hero from "../components/hero";
@@ -18,7 +18,6 @@ export default function Home() {
       <main className={styles.main}>
         <Header/>
         <Hero/>
-        {/* <Button href={undefined} /> */}
         <Footer/>
       </main>
     </>

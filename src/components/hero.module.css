@@ -22,7 +22,7 @@
   padding-top: 90px;
 }
 
-.infoContainer span {
+.title {
   color: var(--white);
   font-size: 2rem;
   font-style: italic;
@@ -43,11 +43,6 @@
   text-transform: uppercase;
 }
 
-.secondTitle span {
-  color: var(--primary);
-  font-size: 2.5rem;
-}
-
 .descriptionContainer {
   padding-top: 30px;
   margin-right: 70px;
@@ -63,4 +58,47 @@
   font-family: "Poppins", sans-serif;
 }
 
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: row;
+  }
 
+  .heroPhoto {
+    width: 1200px;
+    aspect-ratio: auto 1200 / 1186;
+  }
+
+  .secondTitle,
+  .secondTitle span {
+    font-size: 6.4rem;
+    inline-size: 356px;
+    overflow-wrap: break-word;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroPhoto {
+    height: 620px;
+    max-height: 700px;
+    object-fit: contain;
+  }
+
+  .secondTitle,
+  .secondTitle span {
+    inline-size: 420px;
+  }
+
+  .description {
+    word-wrap: break-word;
+    inline-size: 540px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .secondTitle,
+  .secondTitle span {
+    inline-size: 700px;
+  }
+}

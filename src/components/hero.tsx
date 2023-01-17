@@ -10,21 +10,20 @@ import styles from "./hero.module.css";
 const Hero = () => {
   return (
     <section className={styles.container}>
-      <div>
-
-      <picture className={styles.ver}>
+      <picture>
         <Image
           src={GymTrainers}
           alt={"gym trainers"}
           className={styles.heroPhoto}
         />
       </picture>
-      </div>
       <div className={styles.infoContainer}>
-        <span>Your Trainers</span>
-        <h3 className={styles.secondTitle}>
-          way of <span>life</span>
-        </h3>
+        <div className={styles.labelContainer}>
+          <span className={styles.title}>Your Trainers</span>
+          <h3 className={styles.secondTitle}>
+            way of <span style={{ color: "#4c00ff" }}>life</span>
+          </h3>
+        </div>
         <div className={styles.descriptionContainer}>
           <p className={styles.description}>
             Our passion and desire is to help people feel comfortable with
