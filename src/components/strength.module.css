@@ -3,8 +3,8 @@
   padding: 156px 0 56px;
   background-image: url("../assets/images/mision.jpg");
   background-repeat: no-repeat;
-  background-position: center;
   grid-template-rows: 1fr 400px;
+  background-position: center;
 }
 
 .infoContainer {
@@ -22,6 +22,7 @@
 
 .textContainer {
   display: flex;
+  max-width: 510px;
   flex-direction: column;
 }
 
@@ -51,50 +52,22 @@
   padding: 0 20px;
 }
 
-/* .videoContainer{
-  padding-bottom: 60px;
-} */
-
 .videoImage {
-  width: 250px;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
   margin-top: 2px;
-  left: 35px;
-  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-image: url("../assets/images/IMGPlay-TN.jpg");
+  background-repeat: no-repeat;
 }
-.btnPlayContainer {
-  top: 100px;
-  left: 114px;
-  cursor: pointer;
-  position: relative;
-}
-
-/* .videoImage,
-.btnPlayContainer {
-  display: grid;
-} */
 
 @media (min-width: 375px) {
   .videoImage {
     width: 305px;
-  }
-  .btnPlayContainer {
-    top: 150px;
-    left: 136px;
-  }
-
-  /* .videoContainer{
-    padding-bottom: 126px;
-  } */
-}
-
-@media (min-width: 425px) {
-  .videoImage {
-    width: 356px;
-  }
-  .btnPlayContainer {
-    top: 174px;
-    left: 162px;
   }
 }
 
@@ -106,61 +79,32 @@
   }
 
   .videoImage {
-    right: 50px;
-    width: 270px;
-    height: auto;
-    left: 435px;
-    /* display: block;
-    position: absolute; */
+    width: 274px;
+    height: 340px;
   }
 
   .btnPlayContainer {
     top: 120px;
     left: 10px;
     cursor: pointer;
-    /* display: block;
-    position: relative; */
   }
 }
 
 @media (min-width: 1024px) {
   .videoImage {
     width: 402px;
-    left: 572px;
+    height: 500px;
   }
 
-  .btnPlayContainer {
-    top: 196px;
-    left: 18px;
+  .container {
+    width: 100%;
+    padding: 156px 60px 46px;
   }
 }
 
 @media (min-width: 1440px) {
   .videoImage {
     width: 550px;
-    left: 835px;
-  }
-
-  .btnPlayContainer {
-    top: 296px;
-    left: 28px;
-  }
-}
-
-@media (min-width: 1700px) {
-  .videoImage {
-    left: 1135px;
-  }
-  .btnPlayContainer {
-    left: 168px;
-  }
-}
-
-@media (min-width: 2560px) {
-  .videoImage {
-    left: 1335px;
-  }
-  .btnPlayContainer {
-    left: -290px;
+    height: 100%;
   }
 }

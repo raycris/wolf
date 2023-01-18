@@ -7,11 +7,9 @@ import Logo02 from "../assets/images/Logo02.png";
 import Logo03 from "../assets/images/Logo03.png";
 import PlayButton from "../assets/images/Play-B.png";
 
-import Training from "../assets/images/IMGPlay-TN.jpg";
+import Button from "./button";
 
 import styles from "./strength.module.css";
-import Button from "./button";
-import Line from "./line";
 
 const data = [
   {
@@ -56,24 +54,24 @@ const Strength = () => {
           <Button href={undefined} />
         </div>
       </div>
-      <div className={styles.videoContainer}>
-        {/* <picture> */}
-          <a href="https://www.youtube.com/watch?v=7KSNmziMqog">
-            <Image
-              src={Training}
-              alt={"people working out"}
-              className={styles.videoImage}
-            />
-            <span className={styles.btnPlayContainer}>
+      <div>
+        <a
+          href="https://www.youtube.com/watch?v=7KSNmziMqog"
+          target="_blank"
+          rel="noreferrer"
+          className={styles.videoImage}
+        >
+          <span className={styles.btnPlayContainer}>
+            <picture>
               <Image
                 src={PlayButton}
                 alt={"Play Button"}
                 width={100}
                 height={101}
               />
-            </span>
-          </a>
-        {/* </picture> */}
+            </picture>
+          </span>
+        </a>
       </div>
     </section>
   );

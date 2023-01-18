@@ -37,7 +37,7 @@ const Hero = () => {
           <Button href={undefined} />
         </div>
       </section>
-      <Line />
+      {/* <Line /> */}
       <Strength />
     </>
   );
