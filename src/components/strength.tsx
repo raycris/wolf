@@ -10,6 +10,8 @@ import PlayButton from "../assets/images/Play-B.png";
 import Training from "../assets/images/IMGPlay-TN.jpg";
 
 import styles from "./strength.module.css";
+import Button from "./button";
+import Line from "./line";
 
 const data = [
   {
@@ -50,26 +52,28 @@ const Strength = () => {
             </div>
           </div>
         ))}
+        <div className={styles.btnJoin}>
+          <Button href={undefined} />
+        </div>
       </div>
       <div className={styles.videoContainer}>
-
-      <picture >
-        <a href="https://www.youtube.com/watch?v=7KSNmziMqog">
-          <Image
-            src={Training}
-            alt={"people working out"}
-            className={styles.videoBtn}
-          />
-          <span className={styles.btnPlayContainer}>
+        {/* <picture> */}
+          <a href="https://www.youtube.com/watch?v=7KSNmziMqog">
             <Image
-              src={PlayButton}
-              alt={"Play Button"}
-              width={100}
-              height={101}
+              src={Training}
+              alt={"people working out"}
+              className={styles.videoImage}
             />
-          </span>
-        </a>
-      </picture>
+            <span className={styles.btnPlayContainer}>
+              <Image
+                src={PlayButton}
+                alt={"Play Button"}
+                width={100}
+                height={101}
+              />
+            </span>
+          </a>
+        {/* </picture> */}
       </div>
     </section>
   );
