@@ -3,9 +3,10 @@
   width: 100%;
   right: 0;
   bottom: 0;
-  height: 100vh;
+  height: 100%;
   display: flex;
-  position: absolute;
+  z-index: 9999;
+  position: fixed;
   min-width: 288px;
   overflow-y: hidden;
   flex-direction: column;
