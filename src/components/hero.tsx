@@ -8,6 +8,7 @@ import GymTrainers from "../assets/images/Gym-Trainer.jpg";
 import styles from "./hero.module.css";
 import Strength from "./strength";
 import Line from "./line";
+import ChooseUs from "./chooseUs";
 
 const Hero = () => {
   return (
@@ -39,6 +40,7 @@ const Hero = () => {
       </section>
       {/* <Line /> */}
       <Strength />
+      <ChooseUs/>
     </>
   );
 };

@@ -1,0 +1,123 @@
+.container {
+  width: 100%;
+  display: flex;
+  padding: 0 16px;
+  min-width: 288px;
+  max-width: 1320px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.square {
+  width: 6px;
+  margin: 0 0 26px 6px;
+  padding: 0 20px;
+  transform: skewX(150deg);
+  border-color: var(--primary);
+  border-width: 6px;
+  border-bottom-style: solid;
+}
+
+.titleContainer {
+  padding: 0 20px 30px;
+}
+
+.title {
+  color: var(--white);
+  font-size: 2.5rem;
+  word-wrap: break-word;
+  font-style: italic;
+  word-break: break-word;
+  line-height: 1;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.descriptionContainer {
+  padding: 0 20px 40px;
+  line-height: 1.9;
+  margin-right: 100px;
+}
+
+.description {
+  color: #d3d3d3;
+  margin: 0 0 20px;
+  font-size: var(--xSmall);
+  line-height: inherit;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.ProgressRoot {
+  height: 6px;
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0);
+  background: #150242;
+}
+
+.ProgressIndicator {
+  width: 100%;
+  height: 100%;
+  transition: transform 660ms cubic-bezier(0.65, 0, 0.35, 1);
+  background-color: var(--primary);
+}
+
+.skillContainer {
+  padding: 0 20px 76px;
+  line-height: 1.9;
+}
+
+.barContainer {
+  margin-bottom: 50px;
+}
+
+.barLabes {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  justify-content: space-between;
+}
+
+.barLabes span {
+  color: var(--white);
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  text-transform: none;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .photoContainer{
+    display: flex;
+    align-items: end;
+    flex-direction: column-reverse;
+  }
+
+  .photo {
+    width: 244px;
+  }
+
+  .title {
+    font-size: 6.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .photo{
+    width: auto;
+  }
+}
