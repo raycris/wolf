@@ -5,7 +5,6 @@ import Button from "../components/button";
 import Footer from "../components/footer";
 import Header from "../components/header";
 
-
 export default function Home() {
   return (
     <>
@@ -17,7 +16,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Header/>
-        <Button href={undefined} />
+        {/* <Button href={undefined} /> */}
         <Footer/>
       </main>
     </>

@@ -1,0 +1,108 @@
+.container {
+  top: 0;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  display: flex;
+  position: absolute;
+  min-width: 288px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--black);
+}
+
+.closeIcon {
+  cursor: pointer;
+  display: flex;
+  padding: 20px;
+  justify-content: flex-end;
+}
+
+.menuContainer {
+  text-align: center;
+}
+
+.menuItem {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.label {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: var(--normal);
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
+.label::after {
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  height: 4px;
+  content: "";
+  position: absolute;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-out;
+  transform-origin: bottom right;
+  background-color: var(--white);
+}
+
+.label:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.contactContainer {
+  display: flex;
+  margin-top: 250px;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.phone,
+.message {
+  font-size: var(--xsmall);
+  font-weight: 100;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.9;
+}
+
+.phone {
+  margin-bottom: 24px;
+}
+
+.message {
+  color: #cacaca;
+}
+
+.message:hover {
+  color: var(--primary);
+}
+
+@media (min-width: 768px) {
+  .contactContainer {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menuItem a {
+    font-size: var(--large);
+    list-style: none;
+  }
+
+  .container {
+    padding: 50px;
+  }
+}
