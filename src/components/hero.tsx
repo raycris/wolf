@@ -16,6 +16,7 @@ const Hero = () => {
       <section className={styles.container}>
         <picture>
           <Image
+            priority
             src={GymTrainers}
             alt={"gym trainers"}
             className={styles.heroPhoto}
