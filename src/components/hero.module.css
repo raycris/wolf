@@ -1,0 +1,115 @@
+.container {
+  display: flex;
+  padding: 0 16px;
+  max-width: 500px;
+  min-width: 288px;
+  margin-top: 50px;
+  object-fit: contain;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../assets/images/way-of-life.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.heroPhoto {
+  height: 248px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.infoContainer {
+  padding-top: 90px;
+}
+
+.title {
+  color: var(--white);
+  font-size: 2rem;
+  font-style: italic;
+  line-height: 1.4;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0;
+  letter-spacing: 0;
+}
+
+.secondTitle {
+  color: var(--white);
+  font-size: 2.5rem;
+  font-style: italic;
+  line-height: 1;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.descriptionContainer {
+  padding-top: 30px;
+  margin-right: 70px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+
+.description {
+  color: var(--white);
+  font-size: var(--small);
+  line-height: 1.9;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.line {
+  width: 100%;
+  min-width: 288px;
+  margin-top: 2px;
+  border-bottom: 1px solid #8b8b8b;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: row;
+  }
+
+  .heroPhoto {
+    width: 1200px;
+    aspect-ratio: auto 1200 / 1186;
+  }
+
+  .secondTitle,
+  .secondTitle span {
+    font-size: 6.4rem;
+    inline-size: 356px;
+    overflow-wrap: break-word;
+  }
+
+  .line{
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .heroPhoto {
+    height: 620px;
+    max-height: 700px;
+    object-fit: contain;
+  }
+
+  .secondTitle,
+  .secondTitle span {
+    inline-size: 420px;
+  }
+
+  .description {
+    word-wrap: break-word;
+    inline-size: 540px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .secondTitle,
+  .secondTitle span {
+    inline-size: 700px;
+  }
+}

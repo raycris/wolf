@@ -5,7 +5,7 @@ import InstagramSVG from "../assets/icons/instagram.svg";
 
 import styles from "./footer.module.css";
 
-const footer = () => {
+const Footer = () => {
   return (
     <footer className={styles.container}>
       <Image src={wolfLogo} alt="wolf" height={140} width={140} />
@@ -32,4 +32,4 @@ const footer = () => {
   );
 };
 
-export default footer;
+export default Footer;
