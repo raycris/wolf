@@ -1,12 +1,13 @@
 import { useState } from "react";
 
+import Link from "next/link";
 import Image from "next/image";
 
-import Logo from "../assets/images/logo-trainer.png";
-import Phone from "../assets/images/phone.png";
-import Message from "../assets/images/message.png";
+import Logo from "../../assets/images/logo-trainer.png";
+import Phone from "../../assets/images/phone.png";
+import Message from "../../assets/images/message.png";
 
-import Modal from "./modal";
+import Modal from "../Modal/modal";
 
 import styles from "./header.module.css";
 
@@ -24,7 +25,7 @@ const Header = () => {
             </span>
             <span className={styles.message}>
               <Image src={Message} alt="Message" width={18} height={18} />
-              <a href="mailto:clients@wolf.fit">clients@wolf.fit</a>
+              <Link href="mailto:clients@wolf.fit">clients@wolf.fit</Link>
             </span>
           </p>
           <button className={styles.btn} onClick={() => setOpenModal(true)}>

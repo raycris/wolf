@@ -1,7 +1,8 @@
+import Link from "next/link";
 import Image from "next/image";
 
-import wolfLogo from "../assets/images/logo-trainer.png";
-import InstagramSVG from "../assets/icons/instagram.svg";
+import wolfLogo from "../../assets/images/logo-trainer.png";
+import InstagramSVG from "../../assets/icons/instagram.svg";
 
 import styles from "./footer.module.css";
 
@@ -10,7 +11,7 @@ const Footer = () => {
     <footer className={styles.container}>
       <Image src={wolfLogo} alt="wolf" height={140} width={140} />
       <span className={styles.infoContainer}>
-        <a href="https://www.instagram.com/bewolf.rd/">
+        <Link href="https://www.instagram.com/bewolf.rd/">
           <Image
             src={InstagramSVG}
             alt="instagram"
@@ -19,7 +20,7 @@ const Footer = () => {
             style={{ marginRight: 12 }}
           />
           <div className={styles.label}>@bewolf.rd</div>
-        </a>
+        </Link>
       </span>
       <div>
         <span className={styles.label}>
