@@ -1,7 +1,7 @@
 .container {
   display: grid;
   padding: 156px 0 56px;
-  background-image: url("../assets/images/mision.jpg");
+  background-image: url("../../assets/images/mision.jpg");
   background-repeat: no-repeat;
   grid-template-rows: 1fr 400px;
   background-position: center;
@@ -61,7 +61,7 @@
   align-items: center;
   justify-content: center;
   background-size: cover;
-  background-image: url("../assets/images/IMGPlay-TN.jpg");
+  background-image: url("../../assets/images/IMGPlay-TN.jpg");
   background-repeat: no-repeat;
 }
 

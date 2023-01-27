@@ -1,9 +1,8 @@
-import React from "react";
-
+import Link from "next/link";
 import Image from "next/image";
 
-import X from "../assets/icons/xIcon.svg";
-import IgSVG from "../assets/icons/instagram.svg";
+import X from "../../assets/icons/xIcon.svg";
+import IgSVG from "../../assets/icons/instagram.svg";
 
 import styles from "./modal.module.css";
 
@@ -15,31 +14,31 @@ const Modal = ({ closeModal }: any) => {
       </div>
       <ul className={styles.menuContainer}>
         <li className={styles.menuItem}>
-          <a href="#main" className={styles.label}>
+          <Link href="/" className={styles.label}>
             Home
-          </a>
+          </Link>
         </li>
         <li className={styles.menuItem}>
-          <a href="#register" className={styles.label}>
+          <Link href={"/forms/clients-34"} className={styles.label}>
             Registration
-          </a>
+          </Link>
         </li>
         <li className={styles.menuItem}>
-          <a href="mailto:clients@wolf.fit" className={styles.label}>
+          <Link href="mailto:clients@wolf.fit" className={styles.label}>
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
       <div className={styles.contactContainer}>
         <div className={styles.information}>
           <span className={styles.message}>
-            <a href="mailto:clients@wolf.fit">clients@wolf.fit</a>
+            <Link href="mailto:clients@wolf.fit">clients@wolf.fit</Link>
           </span>
           <span className={styles.phone}>1829-819-1370</span>
         </div>
-        <a href="https://www.instagram.com/bewolf.rd/">
+        <Link href="https://www.instagram.com/bewolf.rd/">
           <Image src={IgSVG} alt="instagram" width={24} height={24} />
-        </a>
+        </Link>
       </div>
     </div>
   );

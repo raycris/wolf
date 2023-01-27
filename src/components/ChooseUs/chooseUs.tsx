@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import Image from "next/image";
-import Trainers from "../assets/images/trainer3.jpg";
+import Trainers from "../../assets/images/trainer3.jpg";
 
 import * as Progress from "@radix-ui/react-progress";
 

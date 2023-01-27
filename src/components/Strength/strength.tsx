@@ -1,13 +1,12 @@
-import React from "react";
-
+import Link from "next/link";
 import Image from "next/image";
 
-import Logo01 from "../assets/images/Logo01.png";
-import Logo02 from "../assets/images/Logo02.png";
-import Logo03 from "../assets/images/Logo03.png";
-import PlayButton from "../assets/images/Play-B.png";
+import Logo01 from "../../assets/images/Logo01.png";
+import Logo02 from "../../assets/images/Logo02.png";
+import Logo03 from "../../assets/images/Logo03.png";
+import PlayButton from "../../assets/images/Play-B.png";
 
-import Button from "./button";
+import Button from "../Button/button";
 
 import styles from "./strength.module.css";
 
@@ -51,11 +50,11 @@ const Strength = () => {
           </div>
         ))}
         <div className={styles.btnJoin}>
-          <Button href={undefined} />
+          <Button href={"/forms/clients-34"} />
         </div>
       </div>
       <div>
-        <a
+        <Link
           href="https://www.youtube.com/watch?v=7KSNmziMqog"
           target="_blank"
           rel="noreferrer"
@@ -71,7 +70,7 @@ const Strength = () => {
               />
             </picture>
           </span>
-        </a>
+        </Link>
       </div>
     </section>
   );

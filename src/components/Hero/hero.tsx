@@ -1,14 +1,13 @@
 import React from "react";
 import Image from "next/image";
 
-import Button from "./button";
+import Button from "../Button/button";
+import Strength from "../Strength/strength";
+import ChooseUs from "../ChooseUs/chooseUs";
 
-import GymTrainers from "../assets/images/Gym-Trainer.jpg";
+import GymTrainers from "../../assets/images/Gym-Trainer.jpg";
 
 import styles from "./hero.module.css";
-import Strength from "./strength";
-import Line from "./line";
-import ChooseUs from "./chooseUs";
 
 const Hero = () => {
   return (
@@ -36,12 +35,11 @@ const Hero = () => {
               health is the pillar of all their activities.
             </p>
           </div>
-          <Button href={undefined} />
+          <Button href={"/forms/clients-34"} />
         </div>
       </section>
-      {/* <Line /> */}
       <Strength />
-      <ChooseUs/>
+      <ChooseUs />
     </>
   );
 };

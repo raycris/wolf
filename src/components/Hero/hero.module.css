@@ -7,7 +7,7 @@
   object-fit: contain;
   align-items: center;
   flex-direction: column;
-  background-image: url("../assets/images/way-of-life.jpg");
+  background-image: url("../../assets/images/way-of-life.jpg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -76,8 +76,6 @@
     inline-size: 356px;
     overflow-wrap: break-word;
   }
-
-  
 }
 
 @media (min-width: 1024px) {
